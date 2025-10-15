@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dawid Prus - Business Automation Specialist. Automatyzacja procesów biznesowych i integracja systemów.">
+    <meta property="og:title" content="Dawid Prus - Business Automation Specialist">
+    <meta property="og:description" content="Automatyzacja procesów biznesowych i integracja systemów. Pomogę Ci zautomatyzować Twój biznes.">
+    <meta property="og:type" content="website">
+    <title>Dawid Prus - Business Automation Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dawid Prus",
+      "jobTitle": "Business Automation Specialist",
+      "description": "Specjalista automatyzacji procesów biznesowych, integracji systemów i DevOps",
+      "url": "https://dawidprus.com",
+      "email": "kontakt@prustechnology.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Szczecin",
+        "addressRegion": "Mazovia",
+        "addressCountry": "PL"
+      },
+      "knowsAbout": [
+        "Business Automation",
+        "System Integration", 
+        "DevOps",
+        "CI/CD",
+        "Python",
+        "Go",
+        "Kubernetes",
+        "Docker",
+        "API Development",
+        "Workflow Automation"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Automation Services",
+          "description": "Kompleksowe usługi automatyzacji procesów biznesowych i integracji systemów"
+        }
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Dawid Prus - Business Automation",
+      "description": "Automatyzacja procesów biznesowych, integracja systemów ERP/CRM, DevOps i CI/CD",
+      "url": "https://dawidprus.com",
+      "email": "kontakt@prustechnology.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Szczecin",
+        "addressRegion": "Mazovia", 
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "52.2297",
+        "longitude": "21.0122"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Poland"
+      },
+      "priceRange": "$$",
+      "serviceType": [
+        "Business Automation",
+        "System Integration",
+        "API Development",
+        "DevOps Consulting",
+        "CI/CD Pipeline Implementation",
+        "Cloud Infrastructure Setup",
+        "Monitoring Solutions"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Dawid Prus - Business Automation Specialist",
+      "url": "https://dawidprus.com",
+      "description": "Portfolio i usługi automatyzacji procesów biznesowych",
+      "inLanguage": ["pl", "en"],
+      "author": {
+        "@type": "Person",
+        "name": "Dawid Prus"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Dawid Prus</h1>
+                    <p class="subtitle" data-en="Business Automation Specialist">Business Automation Specialist</p>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav" id="mainNav">
+                    <a href="#about" data-en="About">O mnie</a>
+                    <a href="#services" data-en="Services">Usługi</a>
+                    <a href="#technologies" data-en="Technologies">Technologie</a>
+                    <a href="#process" data-en="How I Work">Jak pracuję</a>
+                    <a href="#cases" data-en="Projects">Projekty</a>
+                    <a href="#contact" class="btn-contact" data-en="Contact">Kontakt</a>
+                    <button class="lang-switch" onclick="toggleLanguage()">
+                        <span class="lang-option active" data-lang="pl">PL</span>
+                        <span class="lang-separator">|</span>
+                        <span class="lang-option" data-lang="en">EN</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title" data-en="Automate Your Business.<br>Focus on What Matters.">
+                        Zautomatyzuj swoją firmę.<br>Zajmij się tym, co naprawdę ważne.
+                    </h2>
+                    <p class="hero-description" data-en="I help you spend less time optimizing your business so you can focus on what you do best.">
+                        Pomogę Ci zyskać więcej czasu, eliminując powtarzalne zadania. Dzięki temu możesz się skupić na rozwijaniu biznesu.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn-primary" data-en="Get in Touch">Porozmawiajmy</a>
+                        <a href="#services" class="btn-secondary hide-on-small-mobile" data-en="See What I Do">Zobacz jak pracuję</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="media/profile.png" alt="Dawid Prus">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About Me">O mnie</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro" data-en="Hi, I'm Dawid Prus, a Business Automation Specialist with a passion for making businesses run smoother and more efficiently.">
+                        Nazywam się Dawid Prus i pomagam firmom działać sprawniej poprzez automatyzację procesów biznesowych.
+                    </p>
+                    <p data-en="I specialize in connecting systems, automating workflows, and solving complex technical challenges. My goal is simple: eliminate repetitive tasks and manual data transfers so you can focus on growing your business.">
+                        Specjalizuję się w integrowaniu systemów i automatyzacji przepływów pracy. Mój cel? Wyeliminować żmudne, powtarzalne czynności, żebyś mógł skupić się na rozwoju swojej firmy.
+                    </p>
+                    <p data-en="Whether you're dealing with multiple ERP systems, manual data imports, or inefficient processes, I create tailored solutions that integrate seamlessly with your existing tools.">
+                        Niezależnie czy borykasz się z kilkoma systemami ERP, ręcznym przepisywaniem danych czy nieefektywnymi procesami - stworzę rozwiązanie dopasowane do Twoich potrzeb, które płynnie zintegruje się z obecnymi narzędziami.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-en="What I Do">Czym się zajmuję</h2>
+            <p class="section-subtitle" data-en="Comprehensive automation solutions tailored to your business needs">
+                Kompleksowe rozwiązania automatyzacji szyte na miarę Twoich potrzeb
+            </p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🎯</div>
+                    </div>
+                    <h3 data-en="Strategic System Analysis">Strategiczna Analiza Systemów</h3>
+                    <p data-en="I start by understanding your business processes end-to-end. Through careful analysis, I identify bottlenecks, redundant tasks, and integration opportunities that will deliver the highest ROI from automation.">
+                        Zaczynam od dokładnego poznania Twoich procesów biznesowych. Identyfikuję wąskie gardła, zbędne czynności i możliwości integracji, które przyniosą największy zwrot z inwestycji w automatyzację.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🔄</div>
+                    </div>
+                    <h3 data-en="Workflow Automation & Orchestration">Automatyzacja Przepływów Pracy</h3>
+                    <p data-en="I build automated workflows that connect your business systems seamlessly. Using tools like n8n and Apache Airflow, I orchestrate complex multi-step processes across your ERP, CRM, e-commerce platforms (Odoo, WFirma, PrestaShop, Magento, InFakt, fakturaXL), and other systems.">
+                        Tworzę zautomatyzowane konektory danych łączące Twoje systemy biznesowe. Za pomocą narzędzi takich jak n8n i Apache Airflow orkiestruję złożone procesy wieloetapowe między systemami ERP, CRM, platformami e-commerce (Odoo, WFirma, PrestaShop, Magento, InFakt, fakturaXL) i innymi.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">⚙️</div>
+                    </div>
+                    <h3 data-en="Custom API Development & Integration">Dedykowane API i Integracje</h3>
+                    <p data-en="When off-the-shelf solutions won't cut it, I develop custom APIs and integrations using Go and Python. I create robust middleware that enables real-time data synchronization between your systems, regardless of their technology stack.">
+                        Gdy gotowe rozwiązania nie wystarczają, tworzę dedykowane API i integracje w Go i Python. Buduję solidne middleware umożliwiające synchronizację danych w czasie rzeczywistym między Twoimi systemami, niezależnie od ich technologii.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">📊</div>
+                    </div>
+                    <h3 data-en="System Monitoring & Security">Monitorowanie i Bezpieczeństwo</h3>
+                    <p data-en="I implement comprehensive monitoring solutions using Grafana dashboards, Prometheus metrics, and ELK stack for log management. This includes real-time alerts, performance tracking, security vulnerability scanning (CVE analysis), and system health monitoring.">
+                        Wdrażam kompleksowe rozwiązania monitoringu z dashboardami Grafana, metrykami Prometheus i stosem ELK do zarządzania logami. Obejmuje to alerty w czasie rzeczywistym, śledzenie wydajności, skanowanie luk bezpieczeństwa (analiza CVE) i monitoring stabilności systemów.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🚀</div>
+                    </div>
+                    <h3 data-en="DevOps & CI/CD Pipeline">DevOps i Pipeline CI/CD</h3>
+                    <p data-en="I design and implement complete CI/CD pipelines that automate your software delivery process. From automated testing and code quality checks to containerized deployments and rollback mechanisms - enabling faster, more reliable releases with minimal manual intervention.">
+                        Projektuję i wdrażam kompletne pipeline'y CI/CD automatyzujące proces dostarczania oprogramowania. Od automatycznych testów i kontroli jakości kodu po konteneryzowane wdrożenia i mechanizmy przywracania - umożliwiając szybsze, bardziej niezawodne wrożenia z minimalną ręczną interwencją.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">☁️</div>
+                    </div>
+                    <h3 data-en="Cloud Infrastructure & Containerization">Infrastruktura Chmurowa i Konteneryzacja</h3>
+                    <p data-en="I architect and deploy scalable cloud infrastructure using Kubernetes and Docker. Whether you're migrating to the cloud or optimizing existing infrastructure, I create solutions that scale with your business while maintaining security and cost efficiency.">
+                        Projektuję i wdrażam skalowalną infrastrukturę chmurową z wykorzystaniem Kubernetes i Docker. Niezależnie czy migrujesz do chmury czy optymalizujesz istniejącą infrastrukturę, tworzę rozwiązania skalujące się z Twoim biznesem przy zachowaniu bezpieczeństwa i efektywności kosztowej.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How I Work Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title" data-en="How I Work">Jak działam</h2>
+            <p class="section-subtitle" data-en="A proven process to transform your business operations">
+                Sprawdzony proces wdrożenia automatyzacji w Twojej firmie
+            </p>
+            
+            <div class="process-diagram">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <div class="process-icon">💡</div>
+                    <h3 data-en="Your Vision">Twoja Wizja</h3>
+                    <p data-en="Share your challenges and goals. I listen carefully to understand your unique business needs.">
+                        Opowiedz mi o wyzwaniach i celach Twojej firmy. Uważnie słucham, by zrozumieć Twoje potrzeby.
+                    </p>
+                </div>
+
+                <div class="process-arrow">→</div>
+
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <div class="process-icon">🔍</div>
+                    <h3 data-en="Deep Analysis">Dokładna Analiza</h3>
+                    <p data-en="I examine your current systems, workflows, and pain points to identify optimization opportunities.">
+                        Przeglądam Twoje systemy, procesy i szukam miejsc do optymalizacji.
+                    </p>
+                </div>
+
+                <div class="process-arrow">→</div>
+
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <div class="process-icon">📋</div>
+                    <h3 data-en="Solution Design">Plan Działania</h3>
+                    <p data-en="I create a detailed plan with clear steps, timeline, and expected outcomes tailored to your needs.">
+                        Tworzę szczegółowy plan z konkretnymi krokami, terminami i oczekiwanymi rezultatami.
+                    </p>
+                </div>
+
+                <div class="process-arrow">→</div>
+
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <div class="process-icon">⚡</div>
+                    <h3 data-en="Implementation">Realizacja</h3>
+                    <p data-en="I build and integrate the automation solution, ensuring smooth deployment with minimal disruption.">
+                        Wdrażam rozwiązanie, dbając o płynne przejście i minimalne zakłócenia w pracy.
+                    </p>
+                </div>
+
+                <div class="process-arrow">→</div>
+
+                <!-- Step 5 -->
+                <div class="process-step">
+                    <div class="process-number">5</div>
+                    <div class="process-icon">🛡️</div>
+                    <h3 data-en="Monitoring & Support">Opieka i Rozwój</h3>
+                    <p data-en="Continuous monitoring and optimization to ensure your systems run flawlessly. I'm here when something unexpected occurs.">
+                        Monitoruję system i optymalizuję jego działanie. Jestem dostępny, gdy wydarzy się coś nieprzewidywalnego.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2 class="section-title" data-en="Technologies I Work With">Technologie, z którymi pracuję</h2>
+            <p class="section-subtitle" data-en="Modern, reliable tools for building robust automation solutions">
+                Nowoczesne, niezawodne narzędzia do budowania solidnych rozwiązań automatyzacji
+            </p>
+            
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3 data-en="Languages & Scripting">Języki i Skrypty</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><img src="media/logos/python.svg" alt="Python" class="tech-logo"> Python</div>
+                        <div class="tech-item"><img src="media/logos/go.svg" alt="Go" class="tech-logo"> Go</div>
+                        <div class="tech-item"><img src="media/logos/bash.svg" alt="Bash" class="tech-logo"> Bash</div>
+                        <div class="tech-item"><img src="media/logos/powershell.svg" alt="PowerShell" class="tech-logo"> PowerShell</div>
+                        <div class="tech-item tech-more" data-en="and more...">i więcej...</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-en="Automation & Orchestration">Automatyzacja i Orkiestracja</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><img src="media/logos/n8n.svg" alt="n8n" class="tech-logo"> n8n</div>
+                        <div class="tech-item"><img src="media/logos/airflow.svg" alt="Apache Airflow" class="tech-logo"> Apache Airflow</div>
+                        <div class="tech-item"><img src="media/logos/rest-api.svg" alt="REST API" class="tech-logo"> REST API</div>
+                        <div class="tech-item"><img src="media/logos/graphql.svg" alt="GraphQL" class="tech-logo"> GraphQL</div>
+                        <div class="tech-item"><img src="media/logos/soap.svg" alt="SOAP" class="tech-logo"> SOAP</div>
+                        <div class="tech-item"><img src="media/logos/rpc.svg" alt="RPC" class="tech-logo"> RPC</div>
+                        <div class="tech-item tech-more" data-en="and more...">i więcej...</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-en="Monitoring & Observability">Monitorowanie</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><img src="media/logos/grafana.svg" alt="Grafana" class="tech-logo"> Grafana</div>
+                        <div class="tech-item"><img src="media/logos/prometheus.svg" alt="Prometheus" class="tech-logo"> Prometheus</div>
+                        <div class="tech-item"><img src="media/logos/thanos.svg" alt="Thanos" class="tech-logo"> Thanos</div>
+                        <div class="tech-item"><img src="media/logos/kuma.svg" alt="Kuma" class="tech-logo"> Kuma</div>
+                        <div class="tech-item"><img src="media/logos/elastic.svg" alt="ELK Stack" class="tech-logo"> ELK Stack</div>
+                        <div class="tech-item tech-more" data-en="and more...">i więcej...</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-en="Infrastructure & Containers">Infrastruktura</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><img src="media/logos/kubernetes.svg" alt="Kubernetes" class="tech-logo"> Kubernetes</div>
+                        <div class="tech-item"><img src="media/logos/docker.svg" alt="Docker" class="tech-logo"> Docker</div>
+                        <div class="tech-item"><img src="media/logos/vps.svg" alt="VPS" class="tech-logo"> VPS</div>
+                        <div class="tech-item tech-more" data-en="and more...">i więcej...</div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-en="Business Systems">Systemy Biznesowe</h3>
+                    <div class="tech-items">
+                        <div class="tech-item"><img src="media/logos/odoo.svg" alt="Odoo" class="tech-logo"> Odoo</div>
+                        <div class="tech-item"><img src="media/logos/prestashop.svg" alt="PrestaShop" class="tech-logo"> PrestaShop</div>
+                        <div class="tech-item"><img src="media/logos/magento.svg" alt="Magento" class="tech-logo"> Magento</div>
+                        <div class="tech-item"><img src="media/logos/wfirma.svg" alt="WFirma" class="tech-logo"> WFirma</div>
+                        <div class="tech-item"><img src="media/logos/infakt.svg" alt="InFakt" class="tech-logo"> InFakt</div>
+                        <div class="tech-item"><img src="media/logos/fakturaxl.svg" alt="fakturaXL" class="tech-logo"> fakturaXL</div>
+                        <div class="tech-item tech-more" data-en="and more...">i więcej...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="cases">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Projects">Wybrane Projekty</h2>
+            <p class="section-subtitle" data-en="Real-world automation solutions that deliver measurable results">
+                Rzeczywiste rozwiązania automatyzacji, które przynoszą wymierne rezultaty
+            </p>
+            
+            <div class="cases-grid">
+                <!-- Case Study 1 -->
+                <div class="case-card">
+                    <div class="case-image-wrapper">
+                        <img src="media/projects/1-main.png" alt="Odoo E-commerce Middleware Integration">
+                    </div>
+                    <div class="case-content">
+                        <h3 data-en="Odoo E-commerce Middleware Integration">Integracja Middleware Odoo z E-commerce</h3>
+                        <div class="case-challenge">
+                            <h4 data-en="Challenge">Wyzwanie</h4>
+                            <p data-en="Client operated multiple e-commerce platforms (PrestaShop and Magento) alongside Odoo ERP, requiring constant manual synchronization of product inventory, pricing, images, and orders. This process consumed 4-5 hours daily and led to frequent stock discrepancies, pricing errors, and delayed order processing across systems.">
+                                Klient prowadził wiele platform e-commerce (PrestaShop i Magento) wraz z systemem ERP Odoo, wymagając ciągłej ręcznej synchronizacji stanów magazynowych, cen, zdjęć produktów i zamówień. Proces ten zajmował 4-5 godzin dziennie i prowadził do częstych rozbieżności w stanach, błędów cenowych i opóźnień w przetwarzaniu zamówień między systemami.
+                            </p>
+                        </div>
+                        <div class="case-solution">
+                            <h4 data-en="Solution">Rozwiązanie</h4>
+                            <ul>
+                                <li data-en="Built custom Python middleware connecting Odoo XML-RPC API with PrestaShop and Magento REST APIs">Stworzenie niestandardowego middleware w Python łączącego Odoo XML-RPC API z PrestaShop i Magento REST API</li>
+                                <li data-en="Implemented bidirectional real-time synchronization of inventory levels, preventing overselling">Implementacja dwukierunkowej synchronizacji stanów magazynowych w czasie rzeczywistym, zapobiegająca nadsprzedaży</li>
+                                <li data-en="Automated price management with dynamic VAT calculation and promotional pricing across all platforms">Automatyczne zarządzanie cenami z dynamicznym kalkulowaniem VAT i cenami promocyjnymi na wszystkich platformach</li>
+                                <li data-en="Set up automated product image synchronization with resizing and optimization for each platform">Konfiguracja automatycznej synchronizacji zdjęć produktów z przeskalowaniem i optymalizacją dla każdej platformy</li>
+                                <li data-en="Created automated order import system with status tracking and customer data synchronization">Utworzenie systemu automatycznego importu zamówień ze śledzeniem statusów i synchronizacją danych klientów</li>
+                                <li data-en="Deployed scheduled cron jobs for periodic full synchronization and conflict resolution">Wdrożenie zaplanowanych zadań cron do okresowej pełnej synchronizacji i rozwiązywania konfliktów</li>
+                                <li data-en="Implemented on-demand sync triggers for immediate updates when needed">Implementacja synchronizacji na żądanie dla natychmiastowych aktualizacji gdy potrzeba</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-card">
+                    <div class="case-image-wrapper">
+                        <img src="media/projects/2-main.png" alt="Multi-Shop Monitoring Infrastructure">
+                    </div>
+                    <div class="case-content">
+                        <h3 data-en="Multi-Shop Monitoring Infrastructure">Infrastruktura Monitoringu dla Sieci Sklepów</h3>
+                        <div class="case-challenge">
+                            <h4 data-en="Challenge">Wyzwanie</h4>
+                            <p data-en="Client managing multiple retail shops faced critical visibility gaps across their distributed infrastructure. Each location ran independent stock management systems, POS software, and various business applications on local VPS instances and on-premise servers. The lack of centralized monitoring meant system failures, performance degradation, and service outages often went unnoticed until customers complained, resulting in lost sales and operational chaos.">
+                                Klient zarządzający wieloma sklepami detalicznymi borykał się z brakiem widoczności w rozproszonej infrastrukturze. Każda lokalizacja prowadziła niezależne systemy zarządzania magazynem, oprogramowanie kasowe i różne aplikacje biznesowe na lokalnych instancjach VPS i serwerach lokalnych. Brak scentralizowanego monitoringu oznaczał, że awarie systemów, spadki wydajności i przestoje były często niezauważone do czasu zgłoszeń klientów, co skutkowało utratą sprzedaży i chaosem operacyjnym.
+                            </p>
+                        </div>
+                        <div class="case-solution">
+                            <h4 data-en="Solution">Rozwiązanie</h4>
+                            <ul>
+                                <li data-en="Deployed containerized monitoring stack using Docker and Prometheus Operator for scalable, maintainable infrastructure">Wdrożenie konteneryzowanego stacku monitoringu z Docker i Prometheus Operator dla skalowalnej, łatwej w utrzymaniu infrastruktury</li>
+                                <li data-en="Implemented Basic Authentication security layer for secure access to monitoring services across public networks">Implementacja warstwy zabezpieczeń Basic Authentication dla bezpiecznego dostępu do usług monitoringu przez sieci publiczne</li>
+                                <li data-en="Created comprehensive Grafana dashboards displaying real-time status of all critical services across every shop location">Stworzenie kompleksowych dashboardów Grafana wyświetlających status wszystkich kluczowych usług w czasie rzeczywistym dla każdej lokalizacji sklepu</li>
+                                <li data-en="Configured Prometheus exporters for each service type: stock management systems, POS applications, database servers, and network infrastructure">Konfiguracja eksporterów Prometheus dla każdego typu usługi: systemów magazynowych, aplikacji kasowych, serwerów baz danych i infrastruktury sieciowej</li>
+                                <li data-en="Set up automated alerting system with multi-channel notifications (email, SMS) for critical service failures">Konfiguracja systemu automatycznych alertów z powiadomieniami wielokanałowymi (email, SMS) dla krytycznych awarii usług</li>
+                                <li data-en="Implemented custom metrics for business-specific KPIs: transaction rates, inventory sync status, and system response times">Implementacja niestandardowych metryk dla specyficznych KPI biznesowych: stawek transakcyjnych, statusu synchronizacji magazynu i czasów odpowiedzi systemów</li>
+                                <li data-en="Created centralized logging with query capabilities for rapid troubleshooting and forensic analysis">Utworzenie scentralizowanego logowania z możliwościami zapytań dla szybkiego rozwiązywania problemów i analiz forensycznych</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="case-card">
+                    <div class="case-image-wrapper">
+                        <img src="media/projects/3-main.png" alt="Excel Data Processing System">
+                    </div>
+                    <div class="case-content">
+                        <h3 data-en="Automated Excel Data Processing & Distribution">Automatyczne Przetwarzanie i Dystrybucja Danych z Excel</h3>
+                        <div class="case-challenge">
+                            <h4 data-en="Challenge">Wyzwanie</h4>
+                            <p data-en="Client's sales team spent over 3 hours daily performing repetitive manual tasks: extracting product data (stock levels, current prices, VAT rates) from multiple Excel spreadsheets, compiling information into formatted PDF reports, and distributing them to a mailing list of partners and suppliers. This manual process was error-prone, with frequent data entry mistakes, version control issues when multiple team members updated the same files, and delays in information distribution that affected business decisions and customer satisfaction.">
+                                Zespół sprzedaży klienta spędzał ponad 3 godziny dziennie na powtarzalnych czynnościach manualnych: wydobywaniu danych produktowych (stany magazynowe, aktualne ceny, stawki VAT) z wielu arkuszy Excel, kompilowaniu informacji w sformatowane raporty PDF i dystrybucji ich do listy mailingowej partnerów i dostawców. Ten manualny proces był podatny na błędy, z częstymi pomyłkami przy wprowadzaniu danych, problemami z kontrolą wersji gdy wielu członków zespołu aktualizowało te same pliki, oraz opóźnieniami w dystrybucji informacji, które wpływały na decyzje biznesowe i satysfakcję klientów.
+                            </p>
+                        </div>
+                        <div class="case-solution">
+                            <h4 data-en="Solution">Rozwiązanie</h4>
+                            <ul>
+                                <li data-en="Built robust Python-based data extraction pipeline using pandas and openpyxl libraries to parse complex Excel file structures">Stworzenie solidnego pipeline'u ekstrakcji danych w Python z wykorzystaniem bibliotek pandas i openpyxl do parsowania złożonych struktur plików Excel</li>
+                                <li data-en="Implemented data validation and cleaning layer to ensure accuracy and handle edge cases in source spreadsheets">Implementacja warstwy walidacji i czyszczenia danych dla zapewnienia dokładności i obsługi przypadków brzegowych w arkuszach źródłowych</li>
+                                <li data-en="Created RESTful API with authentication for real-time data access by external systems and business intelligence tools">Utworzenie RESTful API z uwierzytelnianiem dla dostępu do danych w czasie rzeczywistym przez systemy zewnętrzne i narzędzia business intelligence</li>
+                                <li data-en="Developed automated PDF report generation system with customizable templates, dynamic charts, and branded formatting">Opracowanie systemu automatycznego generowania raportów PDF z konfigurowalnymi szablonami, dynamicznymi wykresami i brandingowym formatowaniem</li>
+                                <li data-en="Set up intelligent email distribution system with personalized content based on recipient preferences and access levels">Konfiguracja inteligentnego systemu dystrybucji email z personalizowaną treścią opartą na preferencjach odbiorców i poziomach dostępu</li>
+                                <li data-en="Deployed scheduled automation using cron jobs running daily at optimal times without any manual intervention">Wdrożenie zaplanowanej automatyzacji z wykorzystaniem zadań cron działających codziennie w optymalnych godzinach bez żadnej ręcznej interwencji</li>
+                                <li data-en="Implemented comprehensive error handling and notification system for monitoring process health and data quality">Implementacja kompleksowego systemu obsługi błędów i powiadomień dla monitorowania zdrowia procesu i jakości danych</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Let's Work Together">Porozmawiajmy</h2>
+            <p class="section-subtitle" data-en="Ready to automate your business? Get in touch and let's discuss your project.">
+                Gotowy na automatyzację swojego biznesu? Skontaktuj się ze mną, aby omówić Twój projekt.
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <h3 data-en="Email">Email</h3>
+                        <a href="mailto:kontakt@prustechnology.com">kontakt@prustechnology.com</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <h3 data-en="Phone">Telefon</h3>
+                        <a href="javascript:void(0);" id="phoneNumber" onclick="revealPhone(event)" style="cursor: pointer;">
+                            <span data-en="Click to reveal">Kliknij aby pokazać</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3 data-en="Quick Contact">Szybki Kontakt</h3>
+                    <p class="form-description" data-en="Fill out the form below and I'll get back to you as soon as possible.">
+                        Wypełnij formularz poniżej, a skontaktuję się z Tobą tak szybko, jak to możliwe.
+                    </p>
+                    <form class="contact-form" onsubmit="sendEmail(event)">
+                        <div class="form-group">
+                            <label for="name" data-en="Name">Imię</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-en="Subject">Temat</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-en="Message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" data-en="Send Message">Wyślij Wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Dawid Prus</h3>
+                    <p data-en="Business Automation Specialist">Business Automation Specialist</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-en="Get in Touch">Kontakt</h4>
+                    <a href="mailto:kontakt@prustechnology.com" class="footer-email">kontakt@prustechnology.com</a>
+                    <a href="javascript:void(0);" id="footerPhone" class="footer-phone" onclick="revealPhone(event)" style="cursor: pointer;">
+                        <span data-en="Show phone">Pokaż telefon</span>
+                    </a>
+                </div>
+                <!-- <div class="footer-social">
+                    <h4 data-en="Connect">Połącz się</h4>
+                    LinkedIn placeholder - can be removed later
+                    <a href="#" class="social-link linkedin-placeholder" data-en="LinkedIn (Coming Soon)">LinkedIn (Wkrótce)</a>
+                </div> -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dawid Prus. <span data-en="All rights reserved.">Wszelkie prawa zastrzeżone.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
